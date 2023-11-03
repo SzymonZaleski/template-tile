@@ -1,0 +1,47 @@
+.repeater-flex {
+  display: flex;
+  flex-wrap: nowrap;
+
+  div.sky-field-label {
+    flex-grow: 1;
+    align-content: flex-start;
+    text-align: start;
+  }
+
+  div.colored {
+    color:green;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 80px auto;
+  padding: 0px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 5px;
+}
+
+.grid-item-italic {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 5px;
+  font-style: italic;
+}
+
+.colored {
+  color:green;
+  font-weight: bold;
+}
+
+.disqualified {
+  color:red;
+  font-weight: bold;
+}
+

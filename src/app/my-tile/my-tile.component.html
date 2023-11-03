@@ -1,0 +1,18 @@
+<sky-page style="overflow: hidden;">
+
+  <sky-fluid-grid>
+    <sky-row>
+      <sky-column [screenXSmall]="4">
+        <div class="sky-font-heading-3">Hello, {{ data.given_name }}</div>
+      </sky-column>
+      <sky-column [screenXSmall]="8">
+        <div class="sky-headline"> </div>
+      </sky-column>
+    </sky-row>
+    <sky-row>
+      <sky-column [screenXSmall]="12">
+        <sky-alert alertType="success">You did it!</sky-alert>
+      </sky-column>
+    </sky-row>
+  </sky-fluid-grid>
+</sky-page>
