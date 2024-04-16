@@ -8,6 +8,7 @@ import { SkyToolbarModule, SkyFluidGridModule, SkyBoxModule } from '@skyux/layou
 import { SkyFilterModule, SkyRepeaterModule, SkyPagingModule } from '@skyux/lists';
 import { SkyIdModule } from '@skyux/core';
 import { SkyPageModule } from '@skyux/pages';
+import { SkyThemeService } from '@skyux/theme';
 
 import { AppComponent } from './app.component';
 
@@ -34,7 +35,10 @@ import { AddinClientService } from '@blackbaud/skyux-lib-addin-client';
     SkyPagingModule,
     SkyIdModule,
   ],
-  providers: [AddinClientService],
+  providers: [
+    AddinClientService,
+    SkyThemeService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

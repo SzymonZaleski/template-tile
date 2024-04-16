@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "template-tile:build:production"
+              "buildTarget": "template-tile:build:production"
             },
             "development": {
-              "browserTarget": "template-tile:build:development"
+              "buildTarget": "template-tile:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -101,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "template-tile:build"
+            "buildTarget": "template-tile:build"
           }
         },
         "test": {
