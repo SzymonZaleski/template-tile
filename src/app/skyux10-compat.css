@@ -1,7 +1,7 @@
 /*******************************************************************************
  * TODO: The following component libraries introduced visual breaking changes
- * in SKY UX 9. Each block of CSS reintroduces the styles that were changed or
- * removed for backwards compatibility. You will need to do the following
+ * in SKY UX 10. Each block of CSS reintroduces the styles that were changed
+ * or removed for backward compatibility. You will need to do the following
  * before migrating to the next major version of SKY UX:
  * - Address each of the changes by following the instructions
  *   in each block of CSS, then remove the block.
@@ -15,13 +15,17 @@
  *******************************************************************************/
 
 /*******************************************************************************
- * The bottom margin has been removed from `sky-form-group` style class. To
- * address this, remove this block of css and change `sky-form-group` to
- * `sky-margin-stacked-sm` or other appropriate spacing classes. See
- * https://developer.blackbaud.com/skyux/design/styles/spacing for a list of
- * supported spacing classes.
+ * H4 and H5 elements should be sentence case in modern theme. To address this
+ * change, remove this block of code and ensure your headers are not written
+ * with all caps.
  *******************************************************************************/
 
 :root {
-  --sky-compat-sky-form-group-margin-bottom: 10px
+  --sky-compat-theme-modern-heading-4-text-transform: uppercase;
+  --sky-compat-theme-modern-heading-5-text-transform: uppercase;
+  --sky-compat-theme-modern-heading-4-font-weight: 400;
+  --sky-compat-theme-modern-heading-5-font-weight: 400;
+  --sky-compat-theme-modern-heading-4-font-color: #686c73;
+  --sky-compat-theme-modern-heading-5-font-color: #686c73;
+
 }
